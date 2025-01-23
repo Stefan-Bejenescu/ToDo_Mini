@@ -1,3 +1,8 @@
+
+'''
+FISIERUL PENTRU FUNCTIILE DE CRIPTARE / DECRIPTARE
+'''
+
 from cryptography.fernet import Fernet
 import os
 

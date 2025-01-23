@@ -1,3 +1,8 @@
+
+'''
+    FISIERUL PENTRU FUNCTIILE DE SALVARE A LISTEI IN FISIER / INCARCARE A LISTEI DIN FISIER
+'''
+
 import os
 from encryption_utils import encrypt_data, decrypt_data
 
