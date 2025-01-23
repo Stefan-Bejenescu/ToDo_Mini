@@ -1,4 +1,25 @@
-### Setup proiect
+## Setup GitHub
+
+Pt a configura acest repository pe laptop-ul tau, creeaza un folder, care va contine fisierele, si deschide-l apoi cu Visual Studio Code.
+
+Din Visual Studio Code, deschide terminalul integrat apasand **CTRL + \`**, si tasteaza urmatoarele comenzi:
+
+`git init`
+`git remote add origin <REPOSITORY_URL>`
+
+, unde `<REPOSITORY_URL>` il poti obtine intrand pe GitHub pe pagina repository-ului, apasand butonul verde `<> CODE`, selectand HTTPS si copiind link-ul obtinut.
+
+Apoi, dupa ce reusesti sa adaugi link-ul ca sursa remote cu succes, ruleaza:
+
+`git pull origin master`
+
+Si optional
+
+`git pull origin master <DENUMIRE_BRANCH>`
+
+pentru fiecare branch pe care doresti sa il ai si tu.
+
+## Setup proiect
 
 Imediat ce clonezi acest repository pe calculatorul tau, verifica daca ai Python instalat folosind:
 
@@ -19,13 +40,17 @@ Asta ar trebui sa iti deschida fereastra aplicatiei (la inceput goala).
 
 **WARNING:** Recomandabil este sa se ruleze comanda de instalare a dependentelor de mai sus ori de cate ori se cloneaza pe calculator o versiune mai noua a acestui repository, fiindca pachetele se mai pot schimba de la un update la altul.
 
-### Setup GitHub
+## Lucrul cu GitHub
 
 Daca ai clonat cu succes repository-ul pe calculatorul tau, incepe prin a rula:
 
 `git branch`
 
-Ar trebui sa vezi in total 4 branch-uri. Acceseaza-l pe cel al feature-ului la care vrei sa lucrezi folosind:
+Ar trebui sa vezi toate branch-urile pe care ti le-ai adaugat folosind comanda `pull`, iar branch-ul master ar trebui sa iasa in evidenta, indicand ca momentan folosesti acest branch.
+
+**ATENTIE!** Nu da niciodata push la schimbari la care lucrezi direct pe branch-ul master. Acest lucru poate suprascrie munca unor colegi daca nu e facut cu grija!
+
+Acceseaza-l pe cel al feature-ului la care vrei sa lucrezi folosind:
 
 `git checkout <NUMELE_BRANCHULUI>`
 
