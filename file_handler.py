@@ -1,13 +1,12 @@
 
 '''
-    FISIERUL PENTRU FUNCTIILE DE SALVARE A LISTEI IN FISIER / INCARCARE A LISTEI DIN FISIER
+ FISIERUL PENTRU FUNCTIILE DE SALVARE A LISTEI IN FISIER / INCARCARE A LISTEI DIN FISIER
 '''
 
 import os
 from encryption_utils import encrypt_data, decrypt_data
 
-FILE_NAME = "todo_list.enc" # Denumirea fisierului unde se vor afla task-urile criptate
-KEY_FILE = "key.key" # Denumirea fisierului unde se va afla cheia de criptare
+FILE_NAME = "todo_list.enc"  # Fișier pentru salvarea task-urilor
 
 def save_todo_list(tasks):
     separator = '\n'

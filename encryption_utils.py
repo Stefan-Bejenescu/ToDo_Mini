@@ -12,7 +12,6 @@ def generate_key(key_file):
         file.write(key)
     return key
 
-
 def load_key(key_file):
     if not os.path.exists(key_file):
         return generate_key(key_file)
@@ -21,7 +20,6 @@ def load_key(key_file):
         key = file.read()
     
     return key
-
 
 def encrypt_data(data, key_file):
     key = load_key(key_file)
@@ -33,3 +31,4 @@ def decrypt_data(data, key_file):
     key = load_key(key_file)
     cipher = Fernet(key)
     return cipher.decrypt(data)
+ 
