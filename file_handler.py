@@ -6,6 +6,7 @@
 import os
 from encryption_utils import encrypt_data, decrypt_data
 
+KEY_FILE = "key.key"
 FILE_NAME = "todo_list.enc"  # Fișier pentru salvarea task-urilor
 
 def save_todo_list(tasks):
