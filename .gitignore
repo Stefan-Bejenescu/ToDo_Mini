@@ -2,3 +2,4 @@ __pycache__
 key.key
 todo_list.enc
 credentials.json
+token.json

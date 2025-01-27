@@ -1,8 +1,3 @@
-
-'''
-    FISIERUL PRINCIPAL, CE CONTINE GUI-UL APLICATIEI
-'''
-
 import subprocess
 import tkinter as tk
 from tkinter import messagebox
@@ -10,7 +5,7 @@ from datetime import datetime
 from file_handler import save_todo_list, load_todo_list
 import requests
 
-FLASK_APP_PATH = "sync_to_calendar.py"
+FLASK_APP_PATH = "sync_with_calendar.py"
 FLASK_PORT = 5000
 FLASK_APP_URL = f"http://127.0.0.1:{FLASK_PORT}/sync"
 
